@@ -185,10 +185,6 @@
 
 // export default Home;
 
-
-
-
-
 // import { motion, useScroll, useTransform } from "framer-motion";
 // import CountUp from "react-countup";
 // import { Swiper, SwiperSlide } from "swiper/react";
@@ -198,12 +194,12 @@
 // import "swiper/css/navigation";
 // import "swiper/css/pagination";
 // import { Parallax } from "react-parallax";
-// import { 
-//   FaUsers, 
-//   FaLeaf, 
-//   FaAward, 
-//   FaHandshake, 
-//   FaVolumeMute, 
+// import {
+//   FaUsers,
+//   FaLeaf,
+//   FaAward,
+//   FaHandshake,
+//   FaVolumeMute,
 //   FaVolumeUp,
 //   FaSeedling,
 //   FaTractor,
@@ -233,12 +229,12 @@
 //   const [activeCounter, setActiveCounter] = useState(false);
 //   const videoRef = useRef(null);
 //   const heroRef = useRef(null);
-  
+
 //   const { scrollYProgress } = useScroll({
 //     target: heroRef,
 //     offset: ["start start", "end start"]
 //   });
-  
+
 //   const heroOpacity = useTransform(scrollYProgress, [0, 1], [1, 0]);
 //   const heroScale = useTransform(scrollYProgress, [0, 1], [1, 1.2]);
 //   const heroY = useTransform(scrollYProgress, [0, 1], [0, 200]);
@@ -325,7 +321,7 @@
 
 //   return (
 //     <div className="overflow-hidden bg-gradient-to-b from-gray-50 to-white">
-      
+
 //       {/* ================= LOADING ANIMATION ================= */}
 //       <motion.div
 //         className="fixed top-0 left-0 right-0 h-1 bg-gradient-to-r from-green-500 via-emerald-500 to-orange-500 z-50"
@@ -337,10 +333,10 @@
 
 //       {/* ================= VIDEO HERO SECTION ================= */}
 //       <section ref={heroRef} className="relative h-screen flex items-center justify-center text-white overflow-hidden">
-        
+
 //         {/* Video Background with Parallax */}
-//         <motion.div 
-//           style={{ 
+//         <motion.div
+//           style={{
 //             scale: heroScale,
 //             y: heroY,
 //             opacity: heroOpacity
@@ -360,10 +356,10 @@
 //           >
 //             <source src={heroVideo} type="video/mp4" />
 //           </video>
-          
+
 //           {/* Animated Gradient Overlay */}
 //           <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/70">
-//             <motion.div 
+//             <motion.div
 //               className="absolute inset-0 bg-gradient-to-t from-green-900/30 via-transparent to-orange-900/30"
 //               animate={{
 //                 opacity: [0.3, 0.5, 0.3],
@@ -414,13 +410,13 @@
 //         </motion.button>
 
 //         {/* Scroll Indicator */}
-//         <motion.div 
+//         <motion.div
 //           className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20"
 //           animate={{ y: [0, 10, 0] }}
 //           transition={{ duration: 1.5, repeat: Infinity }}
 //         >
 //           <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center">
-//             <motion.div 
+//             <motion.div
 //               className="w-1 h-3 bg-white rounded-full mt-2"
 //               animate={{ y: [0, 15, 0] }}
 //               transition={{ duration: 1.5, repeat: Infinity }}
@@ -445,7 +441,7 @@
 //             <HiOutlineSparkles className="text-orange-400" />
 //           </motion.div>
 
-//           <motion.h1 
+//           <motion.h1
 //             initial={{ opacity: 0, y: 30 }}
 //             animate={{ opacity: 1, y: 0 }}
 //             transition={{ duration: 1, delay: 0.8 }}
@@ -457,7 +453,7 @@
 //             <br />
 //             <span className="relative">
 //               Agriculture
-//               <motion.span 
+//               <motion.span
 //                 className="absolute -bottom-4 left-0 right-0 h-2 bg-gradient-to-r from-orange-500 to-orange-300 rounded-full"
 //                 initial={{ scaleX: 0 }}
 //                 animate={{ scaleX: 1 }}
@@ -466,18 +462,18 @@
 //             </span>
 //           </motion.h1>
 
-//           <motion.p 
+//           <motion.p
 //             initial={{ opacity: 0 }}
 //             animate={{ opacity: 1 }}
 //             transition={{ delay: 1.2, duration: 1 }}
 //             className="mt-8 text-xl md:text-2xl max-w-3xl mx-auto text-gray-200"
 //           >
-//             Empowering farmers with <span className="text-orange-400 font-semibold">innovation</span>, 
-//             <span className="text-green-400 font-semibold"> quality</span> & 
+//             Empowering farmers with <span className="text-orange-400 font-semibold">innovation</span>,
+//             <span className="text-green-400 font-semibold"> quality</span> &
 //             <span className="text-blue-400 font-semibold"> trust</span>
 //           </motion.p>
 
-//           <motion.div 
+//           <motion.div
 //             initial={{ opacity: 0, y: 30 }}
 //             animate={{ opacity: 1, y: 0 }}
 //             transition={{ delay: 1.5, duration: 1 }}
@@ -491,7 +487,7 @@
 //                 Explore Products
 //                 <FaArrowRight className="group-hover:translate-x-1 transition-transform" />
 //               </span>
-//               <motion.div 
+//               <motion.div
 //                 className="absolute inset-0 bg-gradient-to-r from-orange-600 to-orange-700"
 //                 initial={{ x: "100%" }}
 //                 whileHover={{ x: 0 }}
@@ -512,7 +508,7 @@
 //       {/* ================= ANIMATED COUNTERS SECTION ================= */}
 //       <section className="py-24 bg-gradient-to-b from-white to-gray-50">
 //         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-//           <motion.div 
+//           <motion.div
 //             className="text-center mb-16"
 //             initial={{ opacity: 0, y: 30 }}
 //             whileInView={{ opacity: 1, y: 0 }}
@@ -529,7 +525,7 @@
 //             <p className="text-xl text-gray-600">Numbers that speak for themselves</p>
 //           </motion.div>
 
-//           <motion.div 
+//           <motion.div
 //             variants={staggerContainer}
 //             initial="initial"
 //             whileInView="animate"
@@ -545,7 +541,7 @@
 //               >
 //                 {/* Background Gradient */}
 //                 <div className={`absolute inset-0 bg-gradient-to-br ${stat.color} opacity-0 group-hover:opacity-5 transition-opacity duration-500`} />
-                
+
 //                 {/* Icon */}
 //                 <div className="relative z-10 mb-6">
 //                   <div className={`w-16 h-16 bg-gradient-to-br ${stat.color} rounded-2xl flex items-center justify-center text-white text-3xl transform group-hover:scale-110 group-hover:rotate-6 transition-transform duration-300`}>
@@ -565,7 +561,7 @@
 //                 <p className="text-gray-600 text-lg">{stat.label}</p>
 
 //                 {/* Decorative Line */}
-//                 <motion.div 
+//                 <motion.div
 //                   className={`absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r ${stat.color}`}
 //                   initial={{ scaleX: 0 }}
 //                   whileInView={{ scaleX: 1 }}
@@ -582,7 +578,7 @@
 //           </motion.div>
 
 //           {/* Progress Bars */}
-//           <motion.div 
+//           <motion.div
 //             className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16"
 //             initial={{ opacity: 0, y: 30 }}
 //             whileInView={{ opacity: 1, y: 0 }}
@@ -598,7 +594,7 @@
 //                 <div className="text-sm text-gray-500 mb-2">{item.label}</div>
 //                 <div className="text-2xl font-bold text-gray-900 mb-2">{item.value}%</div>
 //                 <div className="w-full h-2 bg-gray-200 rounded-full overflow-hidden">
-//                   <motion.div 
+//                   <motion.div
 //                     className="h-full bg-gradient-to-r from-green-500 to-emerald-500"
 //                     initial={{ width: 0 }}
 //                     whileInView={{ width: `${item.value}%` }}
@@ -615,7 +611,7 @@
 //       {/* ================= FEATURED PRODUCTS SECTION ================= */}
 //       <section className="py-24 bg-gradient-to-b from-gray-50 to-white">
 //         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-//           <motion.div 
+//           <motion.div
 //             className="text-center mb-16"
 //             initial={{ opacity: 0, y: 30 }}
 //             whileInView={{ opacity: 1, y: 0 }}
@@ -645,13 +641,13 @@
 //               >
 //                 {/* Image Container */}
 //                 <div className="relative h-64 overflow-hidden">
-//                   <img 
-//                     src={product.image} 
+//                   <img
+//                     src={product.image}
 //                     alt={product.name}
 //                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
 //                   />
 //                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                  
+
 //                   {/* Category Badge */}
 //                   <div className="absolute top-4 left-4 px-4 py-2 bg-white/90 backdrop-blur-sm text-green-600 text-sm font-bold rounded-full shadow-lg">
 //                     {product.category}
@@ -663,15 +659,15 @@
 //                   <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-green-600 transition-colors">
 //                     {product.name}
 //                   </h3>
-                  
+
 //                   <p className="text-gray-500 text-sm mb-4">
 //                     Premium quality for better yields
 //                   </p>
 
 //                   <div className="flex items-center justify-between">
 //                     <span className="text-2xl font-bold text-green-600">{product.price}</span>
-                    
-//                     <Link 
+
+//                     <Link
 //                       to="/products"
 //                       className="px-4 py-2 bg-gray-100 text-gray-600 rounded-full hover:bg-green-600 hover:text-white transition-colors flex items-center gap-2"
 //                     >
@@ -687,13 +683,13 @@
 //             ))}
 //           </div>
 
-//           <motion.div 
+//           <motion.div
 //             className="text-center mt-12"
 //             initial={{ opacity: 0 }}
 //             whileInView={{ opacity: 1 }}
 //             viewport={{ once: true }}
 //           >
-//             <Link 
+//             <Link
 //               to="/products"
 //               className="inline-flex items-center gap-2 px-8 py-4 bg-gray-900 text-white rounded-full font-semibold hover:bg-gray-800 transition-colors group"
 //             >
@@ -711,7 +707,7 @@
 //         className="relative"
 //       >
 //         <div className="h-[500px] flex items-center justify-center bg-black/40">
-//           <motion.div 
+//           <motion.div
 //             initial={{ opacity: 0, scale: 0.8 }}
 //             whileInView={{ opacity: 1, scale: 1 }}
 //             viewport={{ once: true }}
@@ -733,7 +729,7 @@
 //       {/* ================= TESTIMONIAL SLIDER ================= */}
 //       <section className="py-24 bg-gradient-to-b from-white to-gray-50">
 //         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-//           <motion.div 
+//           <motion.div
 //             className="text-center mb-16"
 //             initial={{ opacity: 0, y: 30 }}
 //             whileInView={{ opacity: 1, y: 0 }}
@@ -762,7 +758,7 @@
 //           >
 //             {testimonials.map((testimonial, index) => (
 //               <SwiperSlide key={index}>
-//                 <motion.div 
+//                 <motion.div
 //                   initial={{ opacity: 0 }}
 //                   animate={{ opacity: 1 }}
 //                   exit={{ opacity: 0 }}
@@ -788,8 +784,8 @@
 
 //                     {/* Author Info */}
 //                     <div className="flex items-center gap-4">
-//                       <img 
-//                         src={testimonial.image} 
+//                       <img
+//                         src={testimonial.image}
 //                         alt={testimonial.name}
 //                         className="w-16 h-16 rounded-full object-cover"
 //                       />
@@ -816,7 +812,7 @@
 //       <section className="relative py-32 overflow-hidden">
 //         {/* Background Image */}
 //         <div className="absolute inset-0">
-//           <img 
+//           <img
 //             src="https://images.unsplash.com/photo-1574943320219-553eb673f441?w=1920"
 //             alt="Farm Background"
 //             className="w-full h-full object-cover"
@@ -826,7 +822,7 @@
 
 //         {/* Floating Elements */}
 //         <div className="absolute inset-0 overflow-hidden">
-//           <motion.div 
+//           <motion.div
 //             className="absolute -top-40 -right-40 w-80 h-80 bg-orange-500/20 rounded-full blur-3xl"
 //             animate={{
 //               scale: [1, 1.2, 1],
@@ -838,7 +834,7 @@
 //               ease: "easeInOut"
 //             }}
 //           />
-//           <motion.div 
+//           <motion.div
 //             className="absolute -bottom-40 -left-40 w-80 h-80 bg-emerald-500/20 rounded-full blur-3xl"
 //             animate={{
 //               scale: [1.2, 1, 1.2],
@@ -859,7 +855,7 @@
 //             viewport={{ once: true }}
 //           >
 //             <FaHandshake className="text-6xl text-orange-400 mx-auto mb-6" />
-            
+
 //             <h2 className="text-4xl md:text-5xl font-bold mb-6">
 //               Become Our Authorized Distributor
 //             </h2>
@@ -909,10 +905,10 @@
 //           >
 //             <h3 className="text-3xl font-bold mb-4">Stay Updated with Toshani Agro</h3>
 //             <p className="text-green-100 mb-8">Get the latest farming tips, product launches, and exclusive offers</p>
-            
+
 //             <div className="flex flex-wrap gap-4 justify-center">
-//               <input 
-//                 type="email" 
+//               <input
+//                 type="email"
 //                 placeholder="Enter your email address"
 //                 className="px-6 py-4 rounded-full w-96 max-w-full text-gray-900 focus:outline-none focus:ring-4 focus:ring-green-300"
 //               />
@@ -927,7 +923,7 @@
 //             </p>
 //           </motion.div>
 //         </div>
-   
+
 //       </section>
 
 //       {/* ================= FOOTER ================= */}
@@ -1011,8 +1007,6 @@
 
 // export default Home;
 
-
-
 import { motion, useScroll, useTransform } from "framer-motion";
 import CountUp from "react-countup";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -1023,12 +1017,12 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import img from "../assets/a.png";
 import { Parallax } from "react-parallax";
-import { 
-  FaUsers, 
-  FaLeaf, 
-  FaAward, 
-  FaHandshake, 
-  FaVolumeMute, 
+import {
+  FaUsers,
+  FaLeaf,
+  FaAward,
+  FaHandshake,
+  FaVolumeMute,
   FaVolumeUp,
   FaSeedling,
   FaStar,
@@ -1036,7 +1030,7 @@ import {
   FaArrowRight,
   FaPhone,
   FaEnvelope,
-  FaMapMarkerAlt
+  FaMapMarkerAlt,
 } from "react-icons/fa";
 import { HiOutlineSparkles } from "react-icons/hi";
 import { Link } from "react-router-dom";
@@ -1049,12 +1043,12 @@ function Home() {
   const [activeCounter, setActiveCounter] = useState(false);
   const videoRef = useRef(null);
   const heroRef = useRef(null);
-  
+
   const { scrollYProgress } = useScroll({
     target: heroRef,
-    offset: ["start start", "end start"]
+    offset: ["start start", "end start"],
   });
-  
+
   const heroOpacity = useTransform(scrollYProgress, [0, 1], [1, 0]);
   const heroScale = useTransform(scrollYProgress, [0, 1], [1, 1.2]);
   const heroY = useTransform(scrollYProgress, [0, 1], [0, 200]);
@@ -1076,22 +1070,46 @@ function Home() {
   const fadeInUp = {
     initial: { opacity: 0, y: 60 },
     animate: { opacity: 1, y: 0 },
-    transition: { duration: 0.8 }
+    transition: { duration: 0.8 },
   };
 
   const staggerContainer = {
     animate: {
       transition: {
-        staggerChildren: 0.2
-      }
-    }
+        staggerChildren: 0.2,
+      },
+    },
   };
 
   const stats = [
-    { icon: <FaUsers />, value: 2000, label: "Happy Farmers", suffix: "+", color: "from-blue-500 to-cyan-500" },
-    { icon: <FaLeaf />, value: 8, label: "Products", suffix: "+", color: "from-green-500 to-emerald-500" },
-    { icon: <FaAward />, value: 1, label: "Years Experience", suffix: "+", color: "from-orange-500 to-red-500" },
-    { icon: <FaHandshake />, value: 100, label: "Distributors", suffix: "+", color: "from-purple-500 to-pink-500" }
+    {
+      icon: <FaUsers />,
+      value: 2000,
+      label: "Happy Farmers",
+      suffix: "+",
+      color: "from-blue-500 to-cyan-500",
+    },
+    {
+      icon: <FaLeaf />,
+      value: 8,
+      label: "Products",
+      suffix: "+",
+      color: "from-green-500 to-emerald-500",
+    },
+    {
+      icon: <FaAward />,
+      value: 1,
+      label: "Years Experience",
+      suffix: "+",
+      color: "from-orange-500 to-red-500",
+    },
+    {
+      icon: <FaHandshake />,
+      value: 100,
+      label: "Distributors",
+      suffix: "+",
+      color: "from-purple-500 to-pink-500",
+    },
   ];
 
   const testimonials = [
@@ -1100,27 +1118,29 @@ function Home() {
       name: "Rajesh Kumar",
       location: "Farmer, Maharashtra",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=150"
+      image:
+        "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=150",
     },
     {
       text: "Excellent quality and strong field support. Been using their products for 5 years now, never disappointed.",
       name: "Priya Sharma",
       location: "Progressive Grower, Punjab",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1592982537447-6f2a6a0c7b5b?w=150"
+      image:
+        "https://images.unsplash.com/photo-1592982537447-6f2a6a0c7b5b?w=150",
     },
     {
       text: "The best agricultural solutions provider in the region. Their products are scientifically proven and farmer-friendly.",
       name: "Suresh Patel",
       location: "Distributor, Gujarat",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1574943320219-553eb673f441?w=150"
-    }
+      image:
+        "https://images.unsplash.com/photo-1574943320219-553eb673f441?w=150",
+    },
   ];
 
   return (
     <div className="overflow-hidden bg-gradient-to-b from-gray-50 to-white">
-      
       {/* ================= LOADING ANIMATION ================= */}
       <motion.div
         className="fixed top-0 left-0 right-0 h-1 bg-gradient-to-r from-green-500 via-emerald-500 to-orange-500 z-50"
@@ -1131,183 +1151,154 @@ function Home() {
       />
 
       {/* ================= VIDEO HERO SECTION ================= */}
-      <section ref={heroRef} className="relative h-screen flex items-center justify-center text-white overflow-hidden">
-        
-        {/* Video Background with Parallax */}
-        <motion.div 
-          style={{ 
-            scale: heroScale,
-            y: heroY,
-            opacity: heroOpacity
-          }}
-          className="absolute inset-0 w-full h-full"
-        >
-          <video
-            ref={videoRef}
-            autoPlay
-            loop
-            muted={muted}
-            playsInline
-            onLoadedData={() => setVideoLoaded(true)}
-            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${
-              videoLoaded ? "opacity-100" : "opacity-0"
-            }`}
-          >
-            <source src={heroVideo} type="video/mp4" />
-          </video>
-          
-          {/* Animated Gradient Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-r from-black/10 via-black/40 to-black/10">
-            <motion.div 
-              className="absolute inset-0 bg-gradient-to-t from-green-900/30 via-transparent to-orange-900/30"
-              animate={{
-                opacity: [0.3, 0.5, 0.3],
-              }}
-              transition={{
-                duration: 5,
-                repeat: Infinity,
-                ease: "easeInOut"
-              }}
-            />
-          </div>
-        </motion.div>
+      {/* ================= RESPONSIVE VIDEO HERO SECTION ================= */}
+      <section
+        ref={heroRef}
+        className="relative isolate min-h-[100svh] flex items-center justify-center text-white overflow-hidden bg-[#263323]"
+      >
+        {/* MOBILE FALLBACK BACKGROUND */}
+        <img
+          src={img}
+          alt=""
+          aria-hidden="true"
+          className="absolute inset-0 z-0 block sm:hidden w-full h-full object-cover object-center"
+        />
 
-        {/* Floating Particles */}
-        <div className="absolute inset-0 overflow-hidden">
-          {[...Array(30)].map((_, i) => (
-            <motion.div
-              key={i}
-              className="absolute w-1 h-1 bg-white/30 rounded-full"
-              initial={{
-                x: Math.random() * window.innerWidth,
-                y: Math.random() * window.innerHeight,
-              }}
-              animate={{
-                y: [null, -100, 100, -100],
-                x: [null, 100, -100, 100],
-              }}
-              transition={{
-                duration: Math.random() * 15 + 10,
-                repeat: Infinity,
-                ease: "linear"
-              }}
-            />
-          ))}
+        {/* DESKTOP VIDEO BACKGROUND */}
+        <div className="absolute inset-0 z-0 hidden sm:block overflow-hidden">
+          <motion.div
+            className="absolute inset-0 w-full h-full"
+            style={{
+              scale: heroScale,
+              y: heroY,
+              opacity: heroOpacity,
+            }}
+          >
+            <video
+              ref={videoRef}
+              autoPlay
+              loop
+              muted={muted}
+              playsInline
+              preload="metadata"
+              poster={img}
+              onLoadedData={() => setVideoLoaded(true)}
+              onError={() => setVideoLoaded(false)}
+              className="absolute inset-0 w-full h-full object-cover object-center"
+            >
+              <source src={heroVideo} type="video/mp4" />
+            </video>
+          </motion.div>
         </div>
 
-        {/* Mute Button with Animation */}
-        <motion.button
-          onClick={toggleMute}
-          initial={{ opacity: 0, scale: 0 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 2 }}
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
-          className="absolute bottom-8 right-8 z-20 bg-white/10 backdrop-blur-md p-4 rounded-full text-orange-500 text-xl hover:bg-white/20 transition-all border border-white/20"
-        >
-          {muted ? <FaVolumeMute /> : <FaVolumeUp />}
-        </motion.button>
+        {/* DARK OVERLAY */}
+        <div className="absolute inset-0 z-[1] bg-gradient-to-b from-black/35 via-black/30 to-black/60" />
 
-        {/* Scroll Indicator */}
-        <motion.div 
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20"
-          animate={{ y: [0, 10, 0] }}
-          transition={{ duration: 1.5, repeat: Infinity }}
-        >
-          {/* <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center">
-            <motion.div 
-              className="w-1 h-3 bg-white rounded-full mt-2"
-              animate={{ y: [0, 15, 0] }}
-              transition={{ duration: 1.5, repeat: Infinity }}
-            />
-          </div> */}
-        </motion.div>
+        {/* SUBTLE BRAND COLOR OVERLAY */}
+        <div className="absolute inset-0 z-[2] bg-gradient-to-r from-green-950/20 via-transparent to-orange-950/20" />
 
-        {/* Hero Content */}
+        {/* HERO CONTENT */}
         <motion.div
           style={{ opacity: heroOpacity }}
-          className="relative z-10 text-center px-6 max-w-6xl mx-auto"
+          className="relative z-10 mx-auto w-full max-w-6xl px-5 sm:px-6 pt-20 pb-16 sm:py-24 text-center"
         >
-          {/* Floating Badge */}
+          {/* WELCOME BADGE */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5 }}
-            className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-6 py-3 rounded-full mb-8 border border-white/20"
+            transition={{ delay: 0.3, duration: 0.6 }}
+            className="inline-flex max-w-full items-center justify-center gap-2 rounded-full border border-white/25 bg-white/10 px-4 py-2.5 sm:px-6 sm:py-3 backdrop-blur-md mb-6 sm:mb-8"
           >
-            <HiOutlineSparkles className="text-orange-400" />
-            <span className="text-sm font-semibold tracking-wider">WELCOME TO TOSHNI AGRO</span>
-            <HiOutlineSparkles className="text-orange-400" />
+            <HiOutlineSparkles className="shrink-0 text-orange-400" />
+
+            <span className="text-[10px] sm:text-sm font-semibold tracking-wide sm:tracking-wider">
+              WELCOME TO TOSHNI AGRO
+            </span>
+
+            <HiOutlineSparkles className="shrink-0 text-orange-400" />
           </motion.div>
 
-          <motion.h1 
-            initial={{ opacity: 0, y: 30 }}
+          {/* MAIN HEADING */}
+          <motion.h1
+            initial={{ opacity: 0, y: 25 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.8 }}
-            className="text-6xl md:text-7xl lg:text-8xl font-bold leading-tight"
+            transition={{ duration: 0.8, delay: 0.5 }}
+            className="mx-auto max-w-5xl text-[2.65rem] leading-[1.08] sm:text-6xl md:text-7xl lg:text-8xl font-extrabold tracking-tight"
           >
             <span className="bg-gradient-to-r from-white via-orange-200 to-orange-400 bg-clip-text text-transparent">
               Transforming
             </span>
+
             <br />
-            <span className="relative">
+
+            <span className="relative inline-block mt-1 sm:mt-2">
               Agriculture
-              <motion.span 
-                className="absolute -bottom-4 left-0 right-0 h-2 bg-gradient-to-r from-orange-500 to-orange-300 rounded-full"
+              <motion.span
+                className="absolute -bottom-2 sm:-bottom-3 left-0 right-0 h-1.5 sm:h-2 rounded-full bg-gradient-to-r from-orange-500 to-orange-300"
                 initial={{ scaleX: 0 }}
                 animate={{ scaleX: 1 }}
-                transition={{ delay: 1.5, duration: 1 }}
+                transition={{ delay: 1, duration: 0.8 }}
+                style={{ transformOrigin: "left" }}
               />
             </span>
           </motion.h1>
 
-          <motion.p 
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1.2, duration: 1 }}
-            className="mt-8 text-xl md:text-2xl max-w-3xl mx-auto text-gray-200"
+          {/* DESCRIPTION */}
+          <motion.p
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.8, duration: 0.7 }}
+            className="mx-auto mt-7 sm:mt-8 max-w-2xl text-base sm:text-xl md:text-2xl leading-relaxed text-white/90"
           >
-            Empowering farmers with <span className="text-orange-400 font-semibold">innovation</span>, 
-            <span className="text-green-400 font-semibold"> quality</span> & 
-            <span className="text-blue-400 font-semibold"> trust</span>
+            Empowering farmers with{" "}
+            <span className="font-semibold text-orange-400">innovation</span>,{" "}
+            <span className="font-semibold text-green-400">quality</span> &amp;{" "}
+            <span className="font-semibold text-blue-300">trust</span>
           </motion.p>
 
-          <motion.div 
-            initial={{ opacity: 0, y: 30 }}
+          {/* ACTION BUTTONS */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1.5, duration: 1 }}
-            className="mt-12 flex flex-wrap justify-center gap-6"
+            transition={{ delay: 1, duration: 0.7 }}
+            className="mt-8 sm:mt-12 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6"
           >
             <Link
               to="/products"
-              className="group relative px-8 py-4 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full font-semibold text-lg overflow-hidden shadow-2xl hover:shadow-orange-500/30"
+              className="group inline-flex min-h-12 w-full max-w-[230px] items-center justify-center gap-2 rounded-full bg-gradient-to-r from-orange-500 to-orange-600 px-7 py-3.5 text-base sm:text-lg font-semibold text-white shadow-xl transition-all duration-300 hover:scale-105 hover:shadow-orange-500/30"
             >
-              <span className="relative z-10 flex items-center gap-2">
-                Explore Products
-                <FaArrowRight className="group-hover:translate-x-1 transition-transform" />
-              </span>
-              <motion.div 
-                className="absolute inset-0 bg-gradient-to-r from-orange-600 to-orange-700"
-                initial={{ x: "100%" }}
-                whileHover={{ x: 0 }}
-                transition={{ duration: 0.3 }}
-              />
+              Explore Products
+              <FaArrowRight className="transition-transform group-hover:translate-x-1" />
             </Link>
 
             <Link
-              to="/contact"
-              className="group px-8 py-4 border-2 border-white/30 backdrop-blur-sm rounded-full font-semibold text-lg hover:bg-white hover:text-gray-900 transition-all hover:scale-105"
+              to="/co"
+              className="inline-flex min-h-12 w-full max-w-[230px] items-center justify-center rounded-full border border-white/60 bg-white/10 px-7 py-3.5 text-base sm:text-lg font-semibold text-white backdrop-blur-sm transition-all duration-300 hover:bg-white hover:text-gray-900"
             >
               Become Distributor
             </Link>
           </motion.div>
         </motion.div>
+
+        {/* VIDEO SOUND CONTROL - DESKTOP ONLY */}
+        <motion.button
+          type="button"
+          onClick={toggleMute}
+          aria-label={
+            muted ? "Unmute background video" : "Mute background video"
+          }
+          whileHover={{ scale: 1.08 }}
+          whileTap={{ scale: 0.95 }}
+          className="absolute bottom-6 right-6 z-20 hidden sm:flex items-center justify-center rounded-full border border-white/25 bg-black/30 p-3.5 text-xl text-white backdrop-blur-md transition-colors hover:bg-black/50"
+        >
+          {muted ? <FaVolumeMute /> : <FaVolumeUp />}
+        </motion.button>
       </section>
 
       {/* ================= ANIMATED COUNTERS SECTION ================= */}
       <section className="py-24 bg-gradient-to-b from-white to-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div 
+          <motion.div
             className="text-center mb-16"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -1321,10 +1312,12 @@ function Home() {
                 Growing Together
               </span>
             </h2>
-            <p className="text-xl text-gray-600">Numbers that speak for themselves</p>
+            <p className="text-xl text-gray-600">
+              Numbers that speak for themselves
+            </p>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             variants={staggerContainer}
             initial="initial"
             whileInView="animate"
@@ -1339,11 +1332,15 @@ function Home() {
                 className="group relative bg-white p-8 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden"
               >
                 {/* Background Gradient */}
-                <div className={`absolute inset-0 bg-gradient-to-br ${stat.color} opacity-0 group-hover:opacity-5 transition-opacity duration-500`} />
-                
+                <div
+                  className={`absolute inset-0 bg-gradient-to-br ${stat.color} opacity-0 group-hover:opacity-5 transition-opacity duration-500`}
+                />
+
                 {/* Icon */}
                 <div className="relative z-10 mb-6">
-                  <div className={`w-16 h-16 bg-gradient-to-br ${stat.color} rounded-2xl flex items-center justify-center text-white text-3xl transform group-hover:scale-110 group-hover:rotate-6 transition-transform duration-300`}>
+                  <div
+                    className={`w-16 h-16 bg-gradient-to-br ${stat.color} rounded-2xl flex items-center justify-center text-white text-3xl transform group-hover:scale-110 group-hover:rotate-6 transition-transform duration-300`}
+                  >
                     {stat.icon}
                   </div>
                 </div>
@@ -1360,7 +1357,7 @@ function Home() {
                 <p className="text-gray-600 text-lg">{stat.label}</p>
 
                 {/* Decorative Line */}
-                <motion.div 
+                <motion.div
                   className={`absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r ${stat.color}`}
                   initial={{ scaleX: 0 }}
                   whileInView={{ scaleX: 1 }}
@@ -1370,14 +1367,16 @@ function Home() {
 
                 {/* Corner Accent */}
                 <div className="absolute top-0 right-0 w-20 h-20">
-                  <div className={`absolute top-0 right-0 w-10 h-10 bg-gradient-to-br ${stat.color} opacity-20 rounded-bl-full`} />
+                  <div
+                    className={`absolute top-0 right-0 w-10 h-10 bg-gradient-to-br ${stat.color} opacity-20 rounded-bl-full`}
+                  />
                 </div>
               </motion.div>
             ))}
           </motion.div>
 
           {/* Progress Bars */}
-          <motion.div 
+          <motion.div
             className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -1387,13 +1386,15 @@ function Home() {
               { label: "Farmer Satisfaction", value: 98 },
               { label: "Product Quality", value: 100 },
               { label: "On-time Delivery", value: 95 },
-              { label: "Support Response", value: 99 }
+              { label: "Support Response", value: 99 },
             ].map((item, idx) => (
               <div key={idx} className="text-center">
                 <div className="text-sm text-gray-500 mb-2">{item.label}</div>
-                <div className="text-2xl font-bold text-gray-900 mb-2">{item.value}%</div>
+                <div className="text-2xl font-bold text-gray-900 mb-2">
+                  {item.value}%
+                </div>
                 <div className="w-full h-2 bg-gray-200 rounded-full overflow-hidden">
-                  <motion.div 
+                  <motion.div
                     className="h-full bg-gradient-to-r from-green-500 to-emerald-500"
                     initial={{ width: 0 }}
                     whileInView={{ width: `${item.value}%` }}
@@ -1415,7 +1416,7 @@ function Home() {
         className="relative"
       >
         <div className="h-[500px] flex items-center justify-center bg-black/40">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
@@ -1437,7 +1438,7 @@ function Home() {
       {/* ================= NEW TESTIMONIAL DESIGN ================= */}
       <section className="py-24 bg-gradient-to-b from-white to-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div 
+          <motion.div
             className="text-center mb-16"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -1451,7 +1452,9 @@ function Home() {
                 What Farmers Say
               </span>
             </h2>
-            <p className="text-xl text-gray-600">Real stories from real farmers</p>
+            <p className="text-xl text-gray-600">
+              Real stories from real farmers
+            </p>
           </motion.div>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -1467,7 +1470,7 @@ function Home() {
               >
                 {/* Top colored bar */}
                 <div className="h-2 bg-gradient-to-r from-orange-500 to-orange-600"></div>
-                
+
                 <div className="p-8">
                   {/* Quote icon */}
                   <div className="text-4xl text-orange-500/20 mb-4">
@@ -1489,16 +1492,20 @@ function Home() {
                   {/* Author info */}
                   <div className="flex items-center gap-4">
                     <div className="relative">
-                      <img 
-                        src={testimonial.image} 
+                      <img
+                        src={testimonial.image}
                         alt={testimonial.name}
                         className="w-14 h-14 rounded-full object-cover ring-2 ring-orange-200"
                       />
                       <div className="absolute -bottom-1 -right-1 w-5 h-5 bg-green-500 rounded-full border-2 border-white"></div>
                     </div>
                     <div>
-                      <h4 className="font-bold text-gray-900">{testimonial.name}</h4>
-                      <p className="text-sm text-gray-500">{testimonial.location}</p>
+                      <h4 className="font-bold text-gray-900">
+                        {testimonial.name}
+                      </h4>
+                      <p className="text-sm text-gray-500">
+                        {testimonial.location}
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -1507,13 +1514,13 @@ function Home() {
           </div>
 
           {/* View All Button */}
-          <motion.div 
+          <motion.div
             className="text-center mt-12"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
           >
-            <Link 
+            <Link
               to="/contact"
               className="inline-flex items-center gap-2 px-8 py-4 bg-gray-900 text-white rounded-full font-semibold hover:bg-gray-800 transition-colors group"
             >
@@ -1524,93 +1531,94 @@ function Home() {
         </div>
       </section>
 
-   {/* ================= DISTRIBUTOR SECTION ================= */}
-{/* ================= DISTRIBUTOR SECTION ================= */}
-<section className="relative py-16 overflow-hidden">
-  {/* Background Image */}
-  <div className="absolute inset-0">
-    <img 
-      src="https://images.unsplash.com/photo-1574943320219-553eb673f441?w=1920"
-      alt="Farm Background"
-      className="w-full h-full object-cover"
-    />
-    <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-emerald-600"></div>
-  </div>
-
-  {/* Floating Elements */}
-  <div className="absolute inset-0 overflow-hidden">
-    <motion.div 
-      className="absolute -top-40 -right-40 w-80 h-80 bg-orange-500/20 rounded-full blur-3xl"
-      animate={{
-        scale: [1, 1.2, 1],
-        opacity: [0.3, 0.5, 0.3],
-      }}
-      transition={{
-        duration: 8,
-        repeat: Infinity,
-        ease: "easeInOut"
-      }}
-    />
-    <motion.div 
-      className="absolute -bottom-40 -left-40 w-80 h-80 bg-emerald-500/20 rounded-full blur-3xl"
-      animate={{
-        scale: [1.2, 1, 1.2],
-        opacity: [0.2, 0.4, 0.2],
-      }}
-      transition={{
-        duration: 10,
-        repeat: Infinity,
-        ease: "easeInOut"
-      }}
-    />
-  </div>
-
-  <div className="relative z-10 max-w-3xl mx-auto text-center text-white px-6">
-    <motion.div
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-    >
-      <FaHandshake className="text-5xl text-orange-400 mx-auto mb-4" />
-      
-      <h2 className="text-3xl md:text-4xl font-bold mb-4">
-        Become Our Authorized Distributor
-      </h2>
-
-      <p className="text-lg text-gray-200 mb-6 max-w-2xl mx-auto">
-        Join Toshni Agro's growing distribution network and expand your agri
-        business with premium crop solutions and strong brand support.
-      </p>
-
-      <div className="flex flex-wrap justify-center gap-3 mb-8">
-        <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-full text-sm">
-          <FaLeaf className="text-green-400 text-sm" />
-          <span>Premium Products</span>
+      {/* ================= DISTRIBUTOR SECTION ================= */}
+      {/* ================= DISTRIBUTOR SECTION ================= */}
+      <section className="relative py-16 overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <img
+            src="https://images.unsplash.com/photo-1574943320219-553eb673f441?w=1920"
+            alt="Farm Background"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-emerald-600"></div>
         </div>
-        <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-full text-sm">
-          <FaAward className="text-orange-400 text-sm" />
-          <span>Brand Support</span>
-        </div>
-        <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-full text-sm">
-          <FaUsers className="text-blue-400 text-sm" />
-          <span>Growing Network</span>
-        </div>
-      </div>
 
-      <Link
-        to="/contact"
-        className="group inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full font-semibold text-base hover:shadow-2xl hover:shadow-orange-500/30 transition-all"
-      >
-        Apply Now
-        <FaArrowRight className="group-hover:translate-x-1 transition-transform text-sm" />
-      </Link>
+        {/* Floating Elements */}
+        <div className="absolute inset-0 overflow-hidden">
+          <motion.div
+            className="absolute -top-40 -right-40 w-80 h-80 bg-orange-500/20 rounded-full blur-3xl"
+            animate={{
+              scale: [1, 1.2, 1],
+              opacity: [0.3, 0.5, 0.3],
+            }}
+            transition={{
+              duration: 8,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+          />
+          <motion.div
+            className="absolute -bottom-40 -left-40 w-80 h-80 bg-emerald-500/20 rounded-full blur-3xl"
+            animate={{
+              scale: [1.2, 1, 1.2],
+              opacity: [0.2, 0.4, 0.2],
+            }}
+            transition={{
+              duration: 10,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+          />
+        </div>
 
-      <p className="mt-4 text-xs text-gray-300">
-        Limited opportunities available in selected regions
-      </p>
-    </motion.div>
-  </div>
-</section>
+        <div className="relative z-10 max-w-3xl mx-auto text-center text-white px-6">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <FaHandshake className="text-5xl text-orange-400 mx-auto mb-4" />
+
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Become Our Authorized Distributor
+            </h2>
+
+            <p className="text-lg text-gray-200 mb-6 max-w-2xl mx-auto">
+              Join Toshni Agro's growing distribution network and expand your
+              agri business with premium crop solutions and strong brand
+              support.
+            </p>
+
+            <div className="flex flex-wrap justify-center gap-3 mb-8">
+              <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-full text-sm">
+                <FaLeaf className="text-green-400 text-sm" />
+                <span>Premium Products</span>
+              </div>
+              <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-full text-sm">
+                <FaAward className="text-orange-400 text-sm" />
+                <span>Brand Support</span>
+              </div>
+              <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-full text-sm">
+                <FaUsers className="text-blue-400 text-sm" />
+                <span>Growing Network</span>
+              </div>
+            </div>
+
+            <Link
+              to="/contact"
+              className="group inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full font-semibold text-base hover:shadow-2xl hover:shadow-orange-500/30 transition-all"
+            >
+              Apply Now
+              <FaArrowRight className="group-hover:translate-x-1 transition-transform text-sm" />
+            </Link>
+
+            <p className="mt-4 text-xs text-gray-300">
+              Limited opportunities available in selected regions
+            </p>
+          </motion.div>
+        </div>
+      </section>
       {/* ================= NEWSLETTER SECTION =================
       <section className="py-20 bg-gradient-to-r from-blue-600 to-emerald-600">
         <div className="max-w-4xl mx-auto px-6 text-center text-white">
